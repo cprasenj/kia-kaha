@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+}
+a {
+  text-align: center;
+  font-size: 20px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.carousel-inner > .item {
+  height: 605px;
+}
+.branches {
+  text-align: center;
+}
+.nav-Item {
+  font-size: 0.5em;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+  font-size: 1.2em;
+}
+.nav > li.facebook > a:hover {
+  background: #3b5998 !important;
+}
+.nav > li.twitter > a:hover {
+  background: #55acee !important;
+}
+.nav > li.nav_element > a:hover {
+  color: #ffff02 !important;
+}
+.nav-brand > a:hover {
+  color: #ffff02 !important;
+}
+.nav > li.google > a:hover {
+  background: #dd4a38 !important;
+}
+.nav > li.tumbler > a:hover {
+  background: #324357 !important;
+}
+.nav > li.youtube > a:hover {
+  background: #f00 !important;
+}
+.nav > li.instagram > a:hover {
+  background: #405de6;
+  background: -webkit-linear-gradient(left top, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+  background: -o-linear-gradient(bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+  background: -moz-linear-gradient(bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+  background: linear-gradient(to bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+}
