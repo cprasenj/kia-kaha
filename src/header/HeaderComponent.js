@@ -7,6 +7,13 @@ import {
   Table
 } from 'react-bootstrap';
 
+import Footer from "../footer/FooterComponent";
+import Branches from "../branch/BranchComponent";
+import ContactComponent from "../contact/ContactComponent";
+import ScheduleComponent from "../schedule/ScheduleComponent";
+import ReasonTable from "../reason/ReasonTable";
+import AboutUsComponent from "../aboutUs/AboutUsComponent"
+
 class HeaderComponent extends React.Component {
   render() {
     return (
@@ -75,46 +82,14 @@ class HeaderComponent extends React.Component {
           </Carousel.Item>
         </Carousel>
 
-
-        {/* Container (The Band Section) */}
-        <div id="band" className="container text-center">
-          <h3>About Us</h3>
-          <p>In the late 2000s, if you wanted to learn Karate or Boxing, you could easily find trainers
-              to train under. But what if you wanted to learn Muay Thai or Brazilian Jiu Jitsu? What about
-              MMA?........ It’s highly unlikely you would have found anyone to learn them from, as they were
-              all, especially MMA, relatively new in India. Kia Kaha was born out of this shortcoming, in
-              2010.<br/>
-              It was a humble beginning, sure. But we were a group of dedicated fighters with an
-              insatiable appetite for knowledge. We learnt from various fighters and started training
-              vigorously. We applied the techniques we learnt, mixed them with our own, and developed
-              strategies that would work effectively in our fights. Before we thought of teaching others, we
-              honed ourselves with an aggressive approach. We practiced hard, we fought hard, we
-              survived.<br/>
-              In 2015, Nischal Kellemane (enter your credentials here; your honours and achievements)
-              brought Kia Kaha MMA Academy to Bangalore. We now have more than thousand students
-              training under us, many of whom have won Gold and Silver medals in National Level
-              Kickboxing Competitions.<br/>
-              More recently, we have opened new branches in Indiranagar and Sarjapur.
-              We are the only gym in Bangalore that focuses purely on combat training, on techniques
-              that work well in the ring. We believe in training the hard way, because that’s the only way to
-              learn martial arts. No fancy gear and no unnecessary, distracting music in the gym. Your
-              body is your combat gear and the only music you hear in the gym are of the snip of the rope
-              and of the punches landing on the bag or on the trainees.
-              And as for the name, it’s a Maori phrase, meaning ‘Stay Strong’!
-              <br />Welcome to Kia Kaha!
-            </p>
-
-        </div>
-
-
-        {/* Program section*/}
+        <AboutUsComponent></AboutUsComponent>
 
         <div id="program" className="container text-center">
           <div className="row">
 
             <div className="col-sm-4">
               <a href="#demo" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515911277/about_us3_revncw.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515911277/about_us3_revncw.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Boxing</h3>
               <p>
@@ -126,7 +101,7 @@ class HeaderComponent extends React.Component {
 
             <div className="col-sm-4">
               <a href="#demo2" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912366/kick_boxing_igykc7.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912366/kick_boxing_igykc7.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Kick Boxing</h3>
               <p>
@@ -137,7 +112,7 @@ class HeaderComponent extends React.Component {
 
             <div className="col-sm-4">
               <a href="#demo3" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912372/muay_thai_s7soep.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912372/muay_thai_s7soep.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Muay Thai</h3>
               <p>
@@ -151,7 +126,7 @@ class HeaderComponent extends React.Component {
 
             <div className="col-sm-4">
               <a href="#demo" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912382/wrestling_ftpmrn.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912382/wrestling_ftpmrn.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Wrestling</h3>
               <p>
@@ -163,7 +138,7 @@ class HeaderComponent extends React.Component {
 
             <div className="col-sm-4">
               <a href="#demo2" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912391/jiu_jitsu_zderb1.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912391/jiu_jitsu_zderb1.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Brazilian Jiu Jitsu (BJJ)</h3>
               <p>
@@ -176,7 +151,7 @@ class HeaderComponent extends React.Component {
 
             <div className="col-sm-4">
               <a href="#demo3" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912197/mma_jaljr7.jpg" className="img-circle person" alt="Random Name" width={255} height={255} />
+                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912197/mma_jaljr7.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
               </a>
               <h3>Mixed Martial Arts (MMA)</h3>
               <p>
@@ -214,181 +189,15 @@ class HeaderComponent extends React.Component {
               the punches without running away, then hit back.<br/>
             </p>
             <br/>
-
-          <Table striped bordered condensed hover responsive>
-        		<thead>
-        			<tr>
-        				<th align="center">Regular Folks</th>
-        				<th>MMA Folks</th>
-        			</tr>
-        		</thead>
-        		<tbody>
-        			<tr>
-        				<td>They train to get a good body</td>
-        				<td>We train to kick their asses</td>
-        			</tr>
-        			<tr>
-        				<td>They use machines to train</td>
-        				<td>We are the machines</td>
-        			</tr>
-        			<tr>
-        				<td>After quitting, they will be left with nothing</td>
-        				<td>Even if we quit (not that we will) we will still have learnt something,
-                which carries for the rest of our lives.</td>
-        			</tr>
-              <tr>
-        				<td>They train with non-living things</td>
-        				<td>We train with ourselves and real opponents</td>
-        			</tr>
-              <tr>
-        				<td>Fitness they gain will be lost quickly</td>
-        				<td>With MMA, our bodies will be designed to stay fit
-                for long and will be strong in our daily lives. </td>
-        			</tr>
-              <tr>
-        				<td>Arrogance</td>
-        				<td>Humility</td>
-        			</tr>
-        		</tbody>
-        	</Table>
-
+            <ReasonTable></ReasonTable>
         </div>
 
 
 
-        {/* Container (TOUR Section) */}
-        <div id="schedule" className="bg-1">
-          <div className="container">
-            <h3 className="text-center">Schedule</h3>
-            <Table striped bordered condensed hover responsive>
-          		<thead>
-          			<tr>
-                  <th>Day</th>
-          				<th>Morning</th>
-          				<th>Evening</th>
-          			</tr>
-          		</thead>
-          		<tbody>
-          			<tr>
-          				<td>Monday</td>
-          				<td>We train to kick their asses</td>
-          			</tr>
-          			<tr>
-          				<td>They use machines to train</td>
-          				<td>We are the machines</td>
-          			</tr>
-          			<tr>
-          				<td>After quitting, they will be left with nothing</td>
-          				<td>Even if we quit (not that we will) we will still have learnt something,
-                  which carries for the rest of our lives.</td>
-          			</tr>
-                <tr>
-          				<td>They train with non-living things</td>
-          				<td>We train with ourselves and real opponents</td>
-          			</tr>
-                <tr>
-          				<td>Fitness they gain will be lost quickly</td>
-          				<td>With MMA, our bodies will be designed to stay fit
-                  for long and will be strong in our daily lives. </td>
-          			</tr>
-                <tr>
-          				<td>Arrogance</td>
-          				<td>Humility</td>
-          			</tr>
-          		</tbody>
-          	</Table>
-
-          </div>
-          {/* Modal */}
-          <div className="modal fade" id="myModal" role="dialog">
-            <div className="modal-dialog">
-              {/* Modal content*/}
-              <div className="modal-content">
-                <div className="modal-header">
-                  <button type="button" className="close" data-dismiss="modal">×</button>
-                  <h4><span className="glyphicon glyphicon-lock" /> Tickets</h4>
-                </div>
-                <div className="modal-body">
-                  <form role="form">
-                    <div className="form-group">
-                      <label htmlFor="psw"><span className="glyphicon glyphicon-shopping-cart" /> Tickets, $23 per person</label>
-                      <input type="number" className="form-control" id="psw" placeholder="How many?" />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="usrname"><span className="glyphicon glyphicon-user" /> Send To</label>
-                      <input type="text" className="form-control" id="usrname" placeholder="Enter email" />
-                    </div>
-                    <button type="submit" className="btn btn-block">Pay
-                      <span className="glyphicon glyphicon-ok" />
-                    </button>
-                  </form>
-                </div>
-                <div className="modal-footer">
-                  <button type="submit" className="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                    <span className="glyphicon glyphicon-remove" /> Cancel
-                  </button>
-                  <p>Need <a href="#">help?</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        {/* Container (Contact Section) */}
-        <div id="contact" className="container">
-          <h3 className="text-center">Contact</h3>
-          <p className="text-center"><em>We love our fans!</em></p>
-          <div className="row">
-            <div className="col-md-4">
-              <p>Fan? Drop a note.</p>
-              <p><span className="glyphicon glyphicon-map-marker" />Bangalore, INDIA</p>
-              <p><span className="glyphicon glyphicon-phone" />Phone: +91 74068 99355</p>
-              <p><span className="glyphicon glyphicon-envelope" />Email: nischal.kelamane5@gmail.com</p>
-            </div>
-            <div className="col-md-8">
-              <div className="row">
-                <div className="col-sm-6 form-group">
-                  <input className="form-control" id="name" name="name" placeholder="Name" type="text" required />
-                </div>
-                <div className="col-sm-6 form-group">
-                  <input className="form-control" id="email" name="email" placeholder="Email" type="email" required />
-                </div>
-              </div>
-              <textarea className="form-control" id="comments" name="comments" placeholder="Comment" rows={5} defaultValue={""} />
-              <br />
-              <div className="row">
-                <div className="col-md-12 form-group">
-                  <button className="btn pull-right" type="submit">Send</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-        </div>
-
-        <div id="branches" className="branches">
-          <h3>Branches</h3>
-          <div className="row">
-            <div className="col-lg-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5825843382654!2d77.61544731489597!3d12.934528219190103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144545fac74b%3A0x11876d95df575c1a!2sKia+Kaha!5e0!3m2!1sen!2sin!4v1515852470114" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div className="col-lg-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.002880827266!2d77.63924531489623!3d12.971667218386353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae141c69e24847%3A0x88aa1172394d3b8f!2sKia+Kaha+MMA+Academy!5e0!3m2!1sen!2sin!4v1515916131760" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div className="col-lg-4">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8742749010416!2d77.67049531489585!3d12.915801219594643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae137269c32c73%3A0xd54466d094077e78!2sKia+Kaha+MMA+Sarjapur+Road!5e0!3m2!1sen!2sin!4v1515916206868" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-        <footer className="text-center">
-          <a className="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
-            <span className="glyphicon glyphicon-chevron-up" />
-          </a><br /><br />
-          <p>Kia Kaha</p>
-        </footer>
+        <ScheduleComponent></ScheduleComponent>
+        <ContactComponent></ContactComponent>
+        <Branches></Branches>
+        <Footer></Footer>
       </div>
     );
   }

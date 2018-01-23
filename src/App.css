@@ -1,6 +1,46 @@
 h1 {
   text-align: center;
 }
+.branches {
+  background-image: url("http://res.cloudinary.com/dzpzeprjj/image/upload/v1516726953/kiakaha_idipso.jpg");
+}
+.contact {
+  background-image: url("http://res.cloudinary.com/dzpzeprjj/image/upload/v1516726953/kiakaha_idipso.jpg");
+}
+
+.background {
+  background-image: url("http://res.cloudinary.com/dzpzeprjj/image/upload/v1516726953/kiakaha_idipso.jpg");
+}
+
+.schedule {
+  background-image: url("http://res.cloudinary.com/dzpzeprjj/image/upload/v1516726953/kiakaha_idipso.jpg");
+}
+
+.aboutUs {
+  background-image: url("http://res.cloudinary.com/dzpzeprjj/image/upload/v1516730727/aboutUs_uhsqkx.jpg");
+}
+
+.footer-text {
+  color: #ffff02 !important;
+}
+
+.table {
+  color: #ffff02 !important;
+}
+.address {
+  color: #ffff02 !important;
+}
+h1, h2, h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;
+    font-size: 20px;
+    color: #ffff02 !important;
+}
+
+p {
+  color: #ffff02 !important;
+}
+
 a {
   text-align: center;
   font-size: 20px;
@@ -25,6 +65,7 @@ img {
 .nav > li.facebook > a:hover {
   background: #3b5998 !important;
 }
+
 .nav > li.twitter > a:hover {
   background: #55acee !important;
 }

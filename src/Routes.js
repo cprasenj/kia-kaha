@@ -1,8 +1,12 @@
 import React from 'react';
-import { Route } from 'react-router';
+import { Route, Switch } from 'react-router';
 
 import HeaderComponent from './header/HeaderComponent';
+import AboutUsPage from "./aboutUs/AboutUsPage"
 
 export default  (
-	<Route path='/' component={HeaderComponent} />
+	<Switch>
+		<Route exact path="/" component={HeaderComponent} />
+		<Route path="/aboutUs" component={AboutUsPage} />
+	</Switch>
 )
