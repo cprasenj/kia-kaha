@@ -1,5 +1,5 @@
 import React from 'react';
-import mapLinks from '../mapLinks.js';
+import mapLinks from '../constants/mapLinks.js';
 
 class Branches extends React.Component {
   listOfGoogleLink(){
@@ -10,7 +10,6 @@ class Branches extends React.Component {
           <iframe width="450" height="200" frameborder="0" src={link}></iframe>
          </div>
          <div className="col-md-8">
-          <h3>CONTACT US</h3>
            <address className="address">
              <strong>CYBERBORG BODYART</strong><br/>
              Jl.Kemang 1 No.2B<br/>

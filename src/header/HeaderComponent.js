@@ -11,8 +11,10 @@ import Footer from "../footer/FooterComponent";
 import Branches from "../branch/BranchComponent";
 import ContactComponent from "../contact/ContactComponent";
 import ScheduleComponent from "../schedule/ScheduleComponent";
-import ReasonTable from "../reason/ReasonTable";
-import AboutUsComponent from "../aboutUs/AboutUsComponent"
+import AboutUsComponent from "../aboutUs/AboutUsComponent";
+import CarouselComponent from "../carousel/Carousel";
+import TrainingComponent from "../training/TrainingComponent";
+import Testimonials from "../testimonials/Testimonials";
 
 class HeaderComponent extends React.Component {
   render() {
@@ -42,7 +44,7 @@ class HeaderComponent extends React.Component {
               <ul className="nav navbar-nav navbar-right">
                 <li className="nav_element"><a href="#home">Home</a></li>
                 <li className="nav_element"><a href="#band">About Us</a></li>
-                <li className="nav_element"><a href="#program">Training</a></li>
+                <li className="nav_element"><a href="#training">Training</a></li>
                 <li className="nav_element"><a href="#schedule">Schedule</a></li>
                 <li className="nav_element"><a href="#branches">Branches</a></li>
                 <li className="nav_element"><a href="#testimonials">Testimonials</a></li>
@@ -68,135 +70,25 @@ class HeaderComponent extends React.Component {
             </div>
           </div>
         </nav>
+
+
+
+
         <div id="home"></div>
 
-        <Carousel>
-          <Carousel.Item>
-            <img width={500} height={300} alt="500x300" src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515908216/cover_image1_diw7l2.jpg" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={500} height={300} alt="500x300" src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515908205/cover_image2_dmkq9w.jpg" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={500} height={300} alt="500x300" src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515908199/cover_image3_i2tk5m.jpg" />
-          </Carousel.Item>
-        </Carousel>
+        <CarouselComponent></CarouselComponent>
+
+        <aside className="sticky">
+          <h2><a href="/why-mma">Why MMA?</a></h2>
+        </aside>
 
         <AboutUsComponent></AboutUsComponent>
-
-        <div id="program" className="container text-center">
-          <div className="row">
-
-            <div className="col-sm-4">
-              <a href="#demo" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515911277/about_us3_revncw.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Boxing</h3>
-              <p>
-                One of the most popular combat sports in the world, Boxing is the art of attack and
-                defence using your fists. It’s a contest of speed, reflexes, strength, and endurance
-                between two fighters.
-              </p>
-            </div>
-
-            <div className="col-sm-4">
-              <a href="#demo2" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912366/kick_boxing_igykc7.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Kick Boxing</h3>
-              <p>
-                Kick Boxing is a hybrid combat sport form based on punching and kicking. It
-                originated from Karate, Muay Thai, and Western Boxing.
-              </p>
-            </div>
-
-            <div className="col-sm-4">
-              <a href="#demo3" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912372/muay_thai_s7soep.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Muay Thai</h3>
-              <p>
-                Originated in Thailand, Muay Thai uses the techniques of clinching and striking.
-                Punches, elbow strikes, kicks, and knee strikes form the basis of Muay Thai. It’s one of the deadliest martial arts.
-              </p>
-            </div>
-          </div>
-
-          <div className="row">
-
-            <div className="col-sm-4">
-              <a href="#demo" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912382/wrestling_ftpmrn.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Wrestling</h3>
-              <p>
-                Wrestling involves grappling techniques, joint locks, clinches, grappling pins and holds, and takedowns.
-                One of the oldest combat sports in India, Wrestling is a contest between two individuals trying to
-                gain a superior position over the other, mostly by pinning the other down.
-              </p>
-            </div>
-
-            <div className="col-sm-4">
-              <a href="#demo2" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912391/jiu_jitsu_zderb1.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Brazilian Jiu Jitsu (BJJ)</h3>
-              <p>
-                Brazilian Jiu Jitsu is a martial art based on grappling.
-                The central theme of BJJ is the efficient use of skill to control a resisting opponent and compel him to submit.
-                Since it’s easier to gain control on the ground rather than in a standing position,
-                BJJ involves the skill to take the opponent on the ground and wrestle for a dominant control position.
-              </p>
-            </div>
-
-            <div className="col-sm-4">
-              <a href="#demo3" data-toggle="collapse">
-                <img src="http://res.cloudinary.com/dzpzeprjj/image/upload/v1515912197/mma_jaljr7.jpg" className="img-circle" alt="Random Name" width={255} height={255} />
-              </a>
-              <h3>Mixed Martial Arts (MMA)</h3>
-              <p>
-                One of the fastest growing combat sports in the world,
-                MMA is the amalgamation of various combat sports and martial arts – Boxing,
-                Kickboxing, Muay Thai, Wrestling, Brazilian Jiu Jitsu, and the like.
-                In other words, it’s a full-contact sport, which allows both grappling and striking – both
-                standing and on the ground.
-              </p>
-            </div>
-          </div>
-          <br />
-          <h3>Why Choose MMA?</h3>
-          <p>Well, why not?
-              But if you want us to expound, here it is. MMA is more practical in real life
-              scenarios. An MMA athlete is the most complete athlete: stamina, strength, endurance
-              – he/she has it all. It boosts your self-confidence, motivates you, teaches you humility.
-              In Jiu Jitsu, for instance, a 50-kg guy can easily defeat an 80-kg guy, if he knows the
-              proper techniques. Regardless of your weight, your age, your endurance, you will
-              submit to a guy who is weaker and younger than you are. If this doesn’t teach you
-              humility, what will? You will learn to respect everyone and you will learn never to
-              underestimate anyone.<br/>
-              Unlike other fitness workouts, you will learn something that lasts a lifetime.
-              Your fitness will wither away, but the techniques you have learnt will never die. With
-              MMA, you will be fitter than any other athlete. You will be compelled to test yourself
-              everyday – your fitness, your skills, your ego, your potential, everything that has
-              something to do with your personality.<br/>
-
-              No matter how tall or short or weak or fat or thin you think you are, MMA
-              will make you stronger – both physically and mentally. You will know how to use
-              your strength and your techniques. It’s not the size of you in a fight, it’s the size of the
-              fight in you that matters.<br/>
-              Sometimes life hits you in a place it shouldn’t. You need to know then as to
-              how to handle yourself. That’s what MMA teaches you. To stand your ground, to take
-              the punches without running away, then hit back.<br/>
-            </p>
-            <br/>
-            <ReasonTable></ReasonTable>
-        </div>
-
-
+        <TrainingComponent></TrainingComponent>
 
         <ScheduleComponent></ScheduleComponent>
-        <ContactComponent></ContactComponent>
         <Branches></Branches>
+        <Testimonials></Testimonials>
+        <ContactComponent></ContactComponent>
         <Footer></Footer>
       </div>
     );

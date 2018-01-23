@@ -5,7 +5,7 @@ class AboutUsPage extends React.Component {
     return (
       <div id="band" className="container text-center aboutUs">
         <h1>About Us</h1>
-        <p>In the late 2000s, if you wanted to learn Karate or Boxing, you could easily find trainers
+        <p className="lead">In the late 2000s, if you wanted to learn Karate or Boxing, you could easily find trainers
             to train under. But what if you wanted to learn Muay Thai or Brazilian Jiu Jitsu? What about
             MMA? It’s highly unlikely you would have found anyone to learn them from, as they were
             all, especially MMA, relatively new in India. Kia Kaha was born out of this shortcoming, in
